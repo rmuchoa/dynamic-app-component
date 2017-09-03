@@ -1,0 +1,20 @@
+<div style="text-align:center">
+  <p>
+    <span>
+      <input type="radio" name="type" value="green" [(ngModel)]="item.type">
+      <span style="color: green">success message</span>
+    </span>
+    <span>
+      <input type="radio" name="type" value="orange" [(ngModel)]="item.type">
+      <span style="color: orange">warning message</span>
+    </span>
+    <span>
+      <input type="radio" name="type" value="red" [(ngModel)]="item.type">
+      <span style="color: red">error message</span>
+    </span>
+    <span><button (click)="chooseItem()">Choose Message</button></span>
+  </p>
+
+  <dynamic-list [item]="listItem"></dynamic-list>
+</div>
+
